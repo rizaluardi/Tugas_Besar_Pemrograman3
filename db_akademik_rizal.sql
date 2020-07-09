@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 08, 2020 at 08:20 PM
+-- Generation Time: Jul 09, 2020 at 03:40 PM
 -- Server version: 10.3.16-MariaDB
 -- PHP Version: 7.3.6
 
@@ -44,7 +44,11 @@ CREATE TABLE `api_keys` (
 --
 
 INSERT INTO `api_keys` (`id`, `user_id`, `key`, `level`, `ignore_limits`, `is_private_key`, `ip_addresses`, `date_created`) VALUES
-(2, 1, 'M4K3ITH4PPEN', 1, 0, 0, NULL, 1);
+(2, 1, 'M4K3ITH4PPEN', 1, 0, 0, NULL, 1),
+(3, 2, '432106407', 1, 1, 1, '1', 1),
+(4, 8, '219429764', 1, 1, 1, '1', 1),
+(5, 2, '536224980', 1, 1, 1, '1', 1),
+(6, 2, '593738843', 1, 0, 0, '', 1);
 
 -- --------------------------------------------------------
 
@@ -292,7 +296,10 @@ INSERT INTO `user` (`id_user`, `id_usergroup_user`, `username`, `password`, `fot
 (2, 1, 'rizal', 'rizal', 'rizal.png'),
 (3, 1, 'admin', 'admin', 'admin.png'),
 (4, 1, 'saya', 'saya', 'apaaja.png'),
-(5, 1, 'aku', 'kamu', 'apaaja.png');
+(5, 1, 'aku', 'kamu', 'apaaja.png'),
+(6, 1, 'te', 'yo', 'apaaja.png'),
+(7, 1, 'ayams', 'krispi', 'krispi.png'),
+(8, 1, 'master', 'master', 'apaaja.png');
 
 -- --------------------------------------------------------
 
@@ -427,13 +434,13 @@ ALTER TABLE `usergroup`
 -- AUTO_INCREMENT for table `api_keys`
 --
 ALTER TABLE `api_keys`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- Constraints for dumped tables

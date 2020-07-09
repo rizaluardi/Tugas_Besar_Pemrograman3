@@ -96,16 +96,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		</ul>
 		<p><b>Input data harus berurutan dari pengisian endpoint d atas, kalau tidak database akan error, gunakan postman untuk mempermudah</b></p>
 
-		<p>Test Generate</p>
-		<div id="randomNum">0</div>
-<button onclick="generate()">Randomize</button>
-<script>
-function generate(){
-    var x=document.getElementById("randomNum");
-    x.innerHTML=Math.floor((Math.random()*100000000)+1);
-}
-</script>
-	</div>
+		
 
 	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></p>
 <h3>Created by Rizaluadi-PC</h3>
