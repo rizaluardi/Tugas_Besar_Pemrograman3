@@ -15,10 +15,9 @@ class Login extends CI_Controller{
 	function aksi_login(){
 		$username = $this->input->post('username');
 		$password = $this->input->post('password');
-		$id_user = $this->input->get('id_user');
 		$where = array(
 			'username' => $username,
-			'password' => $password
+			'password' => $password,
 			);
 		$cek = $this->m_login->cek_login("user",$where)->num_rows();
 		if($cek > 0){
